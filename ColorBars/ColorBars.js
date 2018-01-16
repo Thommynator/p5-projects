@@ -4,7 +4,8 @@ var maxDist
 var angleOffset
 
 function setup() {
-  createCanvas(400, 400)
+  var myCanvas = createCanvas(400, 400)
+  myCanvas.parent("ColorBars");
   rectMode(CENTER)
   angleMode(DEGREES)
   colorMode(HSB, 100)

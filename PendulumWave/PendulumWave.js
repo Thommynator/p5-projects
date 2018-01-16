@@ -10,7 +10,8 @@ var t = 0;
 var cycleTime = 16.0; // pendulums are lined up, after this amount of periods
 
 function setup() {
-  createCanvas(600, 600);
+  var myCanvas = createCanvas(600, 600);
+  myCanvas.parent("PendulumWave");
   ellipseMode(CENTER);
 
 	// amount of different pendulums
