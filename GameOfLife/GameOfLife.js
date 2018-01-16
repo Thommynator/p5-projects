@@ -1,3 +1,5 @@
+new p5()
+
 var nInitialCellsProb = 0.4
 var cellcreateCanvas = 10
 var rows

@@ -1,3 +1,5 @@
+new p5()
+
 var bars = []
 var barWidth = 15
 var maxDist
@@ -5,7 +7,7 @@ var angleOffset
 
 function setup() {
   var myCanvas = createCanvas(400, 400)
-  myCanvas.parent("ColorBars");
+  myCanvas.parent("ColorBars")
   rectMode(CENTER)
   angleMode(DEGREES)
   colorMode(HSB, 100)
@@ -87,5 +89,4 @@ function Bar(x, y) {
       this.angle += 360
     }
   }
-
 }
