@@ -15,7 +15,7 @@ function setup() {
 
 	// amount of different pendulums
   var nPendulums = 15;
-  for (i=0; i<nPendulums; i++) {
+  for (var i=0; i<nPendulums; i++) {
     pends.push(new Pendulum(computeLength(cycleTime+i, height-(height*0.1)), map(i,0,nPendulums,18,4)));
   }
 }

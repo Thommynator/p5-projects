@@ -5,17 +5,18 @@ function Pendulum (pendulumLength, radius) {
     this.increaseAngle = true;
     this.range = 0.4;
     this.clr = color(map(this.l, 0, 500, 80,240));
-}
 
-Pendulum.prototype.show = function() {
-  fill(this.clr);
-  stroke(150, 128);
-  line(origin.x, origin.y, (this.l-this.r)*sin(this.phi) + width/2, (this.l-this.r)*cos(this.phi));
-  stroke(0);
-  ellipse(this.l*sin(this.phi) + width/2, this.l*cos(this.phi), this.r*2, this.r*2);
-}
 
-Pendulum.prototype.updateAngle = function(t) {
-  var omega = sqrt(9.81/this.l);
-  this.phi = this.range * sin(omega*t);
+	this.show = function() {
+		fill(this.clr);
+		stroke(150, 128);
+		line(origin.x, origin.y, (this.l-this.r)*sin(this.phi) + width/2, (this.l-this.r)*cos(this.phi));
+		stroke(0);
+		ellipse(this.l*sin(this.phi) + width/2, this.l*cos(this.phi), this.r*2, this.r*2);
+	}
+
+		this.updateAngle = function(t) {
+		var omega = sqrt(9.81/this.l);
+		this.phi = this.range * sin(omega*t);
+	}
 }
