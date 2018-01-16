@@ -108,3 +108,5 @@ function initializeGrid() {
   }
   newGeneration = cellsAlive.slice(0);
 }
+
+var myp5 = new p5(this, 'GameOfLife')
