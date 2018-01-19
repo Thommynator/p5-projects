@@ -1,5 +1,3 @@
-new p5()
-
 var nInitialCellsProb = 0.4
 var cellcreateCanvas = 10
 var rows
@@ -9,8 +7,7 @@ var newGeneration = []
 var it = 0
 
 function setup() {
-  var myCanvas = createCanvas(500, 500)
-  myCanvas.parent("GameOfLife")
+  createCanvas(500, 500)
   background(255)
   rows = height / cellcreateCanvas
   cols = width / cellcreateCanvas

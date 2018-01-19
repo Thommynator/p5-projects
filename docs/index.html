@@ -3,43 +3,50 @@
     <link rel="stylesheet" href="stylesheet.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.8/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.8/addons/p5.dom.js"></script>
-	
+    <!--
     <script src="https://rawgit.com/Thommynator/p5-projects/master/PendulumWave/Pendulum.js"></script>
     <script src="https://rawgit.com/Thommynator/p5-projects/master/PendulumWave/PendulumWave.js"></script>
 	
     <script src="https://rawgit.com/Thommynator/p5-projects/master/GameOfLife/GameOfLife.js"></script>
     
     <script src="https://rawgit.com/Thommynator/p5-projects/master/ColorBars/ColorBars.js"></script>
-    
+    -->
     <style type="text/css">
       .demoCanvas {
         text-align:center;
+      }
+      iframe {
+        border: none;
       }
     </style>
   </head>
   <body>
     <div class="container">
+      <h2 class="display-3" style="margin-bottom:30px;">p5.js Demos</h2>
       <div class="jumbotron">
-        <h2 class="display-3">Color Bars</h2>
+        <h2 class="display-4">Color Bars</h2>
         <p class="lead">Interactive mouse tacking visualization.</p>
         <hr class="my-4">
         <p>Move your mouse over the canvas.</p>
-        <div id="ColorBars" class="demoCanvas"></div>
+        <div class="demoCanvas"><iframe src="https://rawgit.com/Thommynator/p5-projects/master/ColorBars/demo.html" width="400px" height="400px" scrolling="no"></iframe></div>
       </div>
+      
       <div class="jumbotron">
-        <h2 class="display-3">Game Of Life</h2>
+        <h2 class="display-4">Game Of Life</h2>
         <p class="lead">This is Conways Game Of Life.</p>
         <hr class="my-4">
         <p>Click for random restart.</p>
-        <div id="GameOfLife" class="demoCanvas"></div>
+        <div class="demoCanvas"><iframe src="https://rawgit.com/Thommynator/p5-projects/master/GameOfLife/demo.html" width="500px" height="500px" scrolling="no"></iframe></div>
       </div>
+      
       <div class="jumbotron">
-        <h2 class="display-3">Pendulum Wave</h2>
+        <h2 class="display-4">Pendulum Wave</h2>
         <p class="lead"></p>
         <hr class="my-4">
         <p></p>
-        <div id="PendulumWave" class="demoCanvas"></div>
-      </div>       
+        <div class="demoCanvas"><iframe src="https://rawgit.com/Thommynator/p5-projects/master/PendulumWave/demo.html" width="600px" height="600px" scrolling="no"></iframe></div>
+      </div>
+      
     </div>
   </body>
 </html>
