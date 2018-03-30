@@ -1,0 +1,11 @@
+{
+  "name": "p5Projects",
+  "projects": [
+    "PendulumWave",
+    "ColorBars",
+    "GameOfLife",
+    "ReachableRange",
+    "2048",
+    "NeuralColorPicker"
+  ]
+}
